@@ -27,7 +27,7 @@ License: For each use you must have a valid license purchased only from above li
 		<link rel="canonical" href="" />
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 		<!--begin::Fonts(mandatory for all pages)-->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<link rel="stylesheet" href="" />
 		<!--end::Fonts-->
 		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
 		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
@@ -124,14 +124,21 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Menu wrapper-->
 								<!--begin::Toolbar-->
 								<div class="flex-equal text-end ms-1">
-									<span class="fs-8 rounded bg-light px-3 py-2 ">English
-												<img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt=""></span>
-
-									<span class="fs-8 rounded bg-light px-3 py-2">Spanish
-														<img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/spain.svg" alt="">
-													</span>
-									<!--<a href="../dist/authentication/layouts/basic/sign-in.html" class="btn btn-success">Sign In</a>-->
+									<select id="idioma" onchange="cambiarIdioma(this.value)">
+										<option value="es">Spanish <img class="rounded-1" src="assets/media/flags/spain.svg" alt=""></option>
+										<option value="en">English <img class="rounded-1" src="assets/media/flags/united-states.svg" alt=""></option>
+									</select>
+									<script>
+										function cambiarIdioma(idioma) {
+											if(idioma=='es'){
+												window.location.href="index-es.html";
+											}if(idioma=='en'){
+												window.location.href="index-en.html";
+											}
+										}
+									</script>
 								</div>
+
 								<!--end::Toolbar-->
 							</div>
 							<!--end::Wrapper-->
