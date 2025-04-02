@@ -13,1497 +13,1687 @@ License: For each use you must have a valid license purchased only from above li
 -->
 <html lang="es">
 <!--begin::Head-->
-<head><base href=""/>
-	<title>Tus trabajos</title>
-	<meta charset="utf-8" />
-	<meta name="description" content="Hacemos tus trabajos de universidades,cursos, etc" />
-	<meta name="keywords" content="trabajos" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="Tus trabajps" />
-	<link rel="canonical" href="" />
-	<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
-	<!--begin::Fonts(mandatory for all pages)-->
-	<link rel="stylesheet" href="" />
-	<!--end::Fonts-->
-	<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-	<!--end::Global Stylesheets Bundle-->
+<head>
+    <base href=""/>
+    <title>Tus trabajos</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Hacemos tus trabajos de universidades,cursos, etc"/>
+    <meta name="keywords" content="trabajos"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content="Tus trabajps"/>
+    <link rel="canonical" href=""/>
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico"/>
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link rel="stylesheet" href=""/>
+    <!--end::Fonts-->
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+    <!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
 <!--begin::Body-->
 <body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" class="bg-white position-relative app-blank">
 <!--begin::Theme mode setup on page load-->
-<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+<script>var defaultThemeMode = "light";
+var themeMode;
+if (document.documentElement) {
+    if (document.documentElement.hasAttribute("data-bs-theme-mode")) {
+        themeMode = document.documentElement.getAttribute("data-bs-theme-mode");
+    } else {
+        if (localStorage.getItem("data-bs-theme") !== null) {
+            themeMode = localStorage.getItem("data-bs-theme");
+        } else {
+            themeMode = defaultThemeMode;
+        }
+    }
+    if (themeMode === "system") {
+        themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.setAttribute("data-bs-theme", themeMode);
+}</script>
 <!--end::Theme mode setup on page load-->
 <!--begin::Root-->
 <div class="d-flex flex-column flex-root" id="kt_app_root">
-	<!--begin::Header Section-->
-	<div class="mb-0" id="home">
-		<!--begin::Wrapper-->
-		<div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg" style="background-image: url(assets/media/svg/illustrations/landing.svg)">
-			<!--begin::Header-->
-			<div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
-				<!--begin::Container-->
-				<div class="container">
-					<!--begin::Wrapper-->
-					<div class="d-flex align-items-center justify-content-between">
-						<!--begin::Logo-->
-						<div class="d-flex align-items-center flex-equal">
-							<!--begin::Mobile menu toggle-->
-							<button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none" id="kt_landing_menu_toggle">
-								<i class="ki-duotone ki-abstract-14 fs-2hx">
-									<span class="path1"></span>
-									<span class="path2"></span>
-								</i>
-							</button>
-							<!--end::Mobile menu toggle-->
-							<!--begin::Logo image-->
-							<a href="../dist/landing.html">
-								<img alt="Logo" src="assets/media/logos/landing.svg" class="logo-default h-25px h-lg-30px" />
-								<img alt="Logo" src="assets/media/logos/landing-dark.svg" class="logo-sticky h-20px h-lg-25px" />
-							</a>
-							<!--end::Logo image-->
-						</div>
-						<!--end::Logo-->
-						<!--begin::Menu wrapper-->
-						<div class="d-lg-block" id="kt_header_nav_wrapper">
-							<div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
-								<!--begin::Menu-->
-								<div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold" id="kt_landing_menu">
-									<!--begin::Menu item-->
-									<div class="menu-item">
-										<!--begin::Menu link-->
-										<a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="#kt_body" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Inicio</a>
-										<!--end::Menu link-->
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item">
-										<!--begin::Menu link-->
-										<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">¿Cómo funciona?</a>
-										<!--end::Menu link-->
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item">
-										<!--begin::Menu link-->
-										<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#achievements" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Achievements</a>
-										<!--end::Menu link-->
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item">
-										<!--begin::Menu link-->
-										<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#team" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Preguntas frecuentes</a>
-										<!--end::Menu link-->
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item">
-										<!--begin::Menu link-->
-										<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#portfolio" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Métodos de pago</a>
-										<!--end::Menu link-->
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item">
-										<!--begin::Menu link-->
-										<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#pricing" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Ciclos</a>
-										<!--end::Menu link-->
-									</div>
-									<!--end::Menu item-->
-								</div>
-								<!--end::Menu-->
-							</div>
-						</div>
-						<!--end::Menu wrapper-->
-						<!--begin::Toolbar-->
-						<div class="flex-equal text-end ms-1">
-							<select id="idioma" onchange="cambiarIdioma(this.value)" style="padding: 10px;border-radius: 5px;border: 1px solid #ccc">
-								<option value="es" selected>Español <img class="rounded-1" src="assets/media/flags/spain.svg" alt=""></option>
-								<option value="en">Inglés <img class="rounded-1" src="assets/media/flags/united-states.svg" alt=""></option>
-							</select>
-							<script>
-								function cambiarIdioma(idioma) {
-									if(idioma=='es'){
-										window.location.href="index-es.html";
-									}if(idioma=='en'){
-										window.location.href="index-en.html";
-									}
-								}
-							</script>
+    <!--begin::Header Section-->
+    <div class="mb-0" id="home">
+        <!--begin::Wrapper-->
+        <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg"
+             style="background-image: url(assets/media/svg/illustrations/landing.svg)">
+            <!--begin::Header-->
+            <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
+                 data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+                <!--begin::Container-->
+                <div class="container">
+                    <!--begin::Wrapper-->
+                    <div class="d-flex align-items-center justify-content-between">
+                        <!--begin::Logo-->
+                        <div class="d-flex align-items-center flex-equal">
+                            <!--begin::Mobile menu toggle-->
+                            <button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none"
+                                    id="kt_landing_menu_toggle">
+                                <i class="ki-duotone ki-abstract-14 fs-2hx">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </i>
+                            </button>
+                            <!--end::Mobile menu toggle-->
+                            <!--begin::Logo image-->
+                            <a href="../dist/index-es.html">
+                                <img alt="Logo" src="assets/media/logos/logo.png"
+                                     class="logo-default h-25px h-lg-100px w-140px"/>
 
-						</div>
-						<!--end::Toolbar-->
-					</div>
-					<!--end::Wrapper-->
-				</div>
-				<!--end::Container-->
-			</div>
-			<!--end::Header-->
-			<!--begin::Landing hero-->
-			<div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-400px px-9">
-				<!--begin::Heading-->
-				<div class="text-center ">
-					<!--begin::Title-->
-					<h1 class="text-white " style="color: #630cab;font-weight: normal;text-transform: uppercase;font-size: 40px;padding: 0px;
-  font-weight: 600;text-align: center;margin: 0px;">TUTORES TE AYUDAN CON TAREAS UNIVERSITARIAS EN EE. UU.
+                            </a>
+                            <!--end::Logo image-->
+                        </div>
+                        <!--end::Logo-->
+                        <!--begin::Menu wrapper-->
+                        <div class="d-lg-block" id="kt_header_nav_wrapper">
+                            <div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu"
+                                 data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
+                                 data-kt-drawer-width="200px" data-kt-drawer-direction="start"
+                                 data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true"
+                                 data-kt-swapper-mode="prepend"
+                                 data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
+                                <!--begin::Menu-->
+                                <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-semibold"
+                                     id="kt_landing_menu">
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item">
+                                        <!--begin::Menu link-->
+                                        <a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="#kt_body"
+                                           data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Inicio</a>
+                                        <!--end::Menu link-->
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item">
+                                        <!--begin::Menu link-->
+                                        <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works"
+                                           data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">¿Cómo
+                                            funciona?</a>
+                                        <!--end::Menu link-->
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item">
+                                        <!--begin::Menu link-->
+                                        <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#achievements"
+                                           data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Opiniones</a>
+                                        <!--end::Menu link-->
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item">
+                                        <!--begin::Menu link-->
+                                        <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#team"
+                                           data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Preguntas
+                                            frecuentes</a>
+                                        <!--end::Menu link-->
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item">
+                                        <!--begin::Menu link-->
+                                        <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#portfolio"
+                                           data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Métodos de
+                                            pago</a>
+                                        <!--end::Menu link-->
+                                    </div>
+                                    <!--end::Menu item-->
+                                    <!--begin::Menu item-->
+                                    <div class="menu-item">
+                                        <!--begin::Menu link-->
+                                        <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#pricing"
+                                           data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Ciclos</a>
+                                        <!--end::Menu link-->
+                                    </div>
+                                    <!--end::Menu item-->
+                                </div>
+                                <!--end::Menu-->
+                            </div>
+                        </div>
+                        <!--end::Menu wrapper-->
+                        <!--begin::Toolbar-->
+                        <div class="flex-equal text-end ms-1">
+                            <select id="idioma" onchange="cambiarIdioma(this.value)"
+                                    style="padding: 10px;border-radius: 5px;border: 1px solid #ccc">
+                                <option value="es" selected>Español <img class="rounded-1"
+                                                                         src="assets/media/flags/spain.svg" alt="">
+                                </option>
+                                <option value="en">Inglés <img class="rounded-1"
+                                                               src="assets/media/flags/united-states.svg" alt="">
+                                </option>
+                            </select>
+                            <script>
+                                function cambiarIdioma(idioma) {
+                                    if (idioma == 'es') {
+                                        window.location.href = "index-es.html";
+                                    }
+                                    if (idioma == 'en') {
+                                        window.location.href = "index-en.html";
+                                    }
+                                }
+                            </script>
 
-						<span style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+                        </div>
+                        <!--end::Toolbar-->
+                    </div>
+                    <!--end::Wrapper-->
+                </div>
+                <!--end::Container-->
+            </div>
+            <!--end::Header-->
+            <!--begin::Landing hero-->
+            <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-400px px-9">
+                <!--begin::Heading-->
+                <div class="text-center ">
+                    <!--begin::Title-->
+                    <h1 class="text-white " style="color: #630cab;font-weight: normal;text-transform: uppercase;font-size: 40px;padding: 0px;
+  font-weight: 600;text-align: center;margin: 0px;">TUTORES TE AYUDAN CON TU UNIVERSIDAD ONLINE EN EE. UU.
+
+                        <span style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
 							<br>
-							<span id="kt_landing_hero_text"> ENFERMERÍA</span>
+							<span id="kt_landing_hero_text">CARRERA ENFERMERÍA</span>
 							</span></h1>
-					<!--end::Title-->
-					<p style="color: white" class="py-15 fs-5">Si eres estudiante universitario en Estados Unidos de América (EUA), sabes lo desafiante que puede ser gestionar varias asignaturas y cursos al mismo tiempo. Asignaciones complejas en diversas materias que pueden convertirse en una pesadilla si no cuentas con el tiempo necesario o la orientación adecuada. Aquí es donde entra en juego nuestro servicio de ayuda con tareas universitarias: un recurso confiable, personalizado y disponible en todos los Estados de EUA. Envía tu Tarea u Asignación a nuestro correo electrónico:</p>
-					<!--begin::Action-->
+                    <!--end::Title-->
+                    <p style="color: white" class="py-15 fs-5">Si eres estudiante universitario en Estados Unidos de
+                        América (EUA), sabes lo desafiante que puede ser gestionar varias asignaturas y cursos al mismo
+                        tiempo. Asignaciones complejas en diversas materias que pueden convertirse en una pesadilla si
+                        no cuentas con el tiempo necesario o la orientación adecuada. Aquí es donde entra en juego
+                        nuestro servicio de ayuda con CON TU UNIVERSIDAD ONLINE: un recurso confiable, personalizado y
+                        disponible en todos los Estados de EUA.</p>
+                    <!--begin::Action-->
 
-					<!--end::Action-->
-				</div>
-				<!--end::Heading-->
-				<!--begin::Clients-->
-				<div class="d-flex flex-center flex-wrap position-relative px-5">
-					<!--begin::Client-->
-					<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
-						<img src="assets/media/svg/brand-logos/fujifilm.svg" class="mh-30px mh-lg-40px" alt="" />
-					</div>
-					<!--end::Client-->
-					<!--begin::Client-->
-					<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
-						<img src="assets/media/svg/brand-logos/vodafone.svg" class="mh-30px mh-lg-40px" alt="" />
-					</div>
-					<!--end::Client-->
-					<!--begin::Client-->
-					<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="KPMG International">
-						<img src="assets/media/svg/brand-logos/kpmg.svg" class="mh-30px mh-lg-40px" alt="" />
-					</div>
-					<!--end::Client-->
-					<!--begin::Client-->
-					<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
-						<img src="assets/media/svg/brand-logos/nasa.svg" class="mh-30px mh-lg-40px" alt="" />
-					</div>
-					<!--end::Client-->
-					<!--begin::Client-->
-					<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
-						<img src="assets/media/svg/brand-logos/aspnetzero.svg" class="mh-30px mh-lg-40px" alt="" />
-					</div>
-					<!--end::Client-->
-					<!--begin::Client-->
-					<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="AON - Empower Results">
-						<img src="assets/media/svg/brand-logos/aon.svg" class="mh-30px mh-lg-40px" alt="" />
-					</div>
-					<!--end::Client-->
-					<!--begin::Client-->
-					<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
-						<img src="assets/media/svg/brand-logos/hp-3.svg" class="mh-30px mh-lg-40px" alt="" />
-					</div>
-					<!--end::Client-->
-					<!--begin::Client-->
-					<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
-						<img src="assets/media/svg/brand-logos/truman.svg" class="mh-30px mh-lg-40px" alt="" />
-					</div>
-					<!--end::Client-->
-				</div>
-				<!--end::Clients-->
-			</div>
-			<!--end::Landing hero-->
-		</div>
-		<!--end::Wrapper-->
-		<!--begin::Curve bottom-->
-		<div class="landing-curve landing-dark-color mb-10 mb-lg-20">
-			<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
-			</svg>
-		</div>
-		<!--end::Curve bottom-->
-	</div>
-	<!--end::Header Section-->
-	<!--begin::How It Works Section-->
-	<div class="mb-n10 mb-lg-n20 z-index-2">
-		<!--begin::Container-->
-		<div class="container">
-			<!--begin::Heading-->
-			<div class="text-center mb-17">
-				<!--begin::Title-->
-				<h3 class="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">¿Cómo funciona?</h3>
-				<!--end::Title-->
+                    <!--end::Action-->
+                </div>
+                <!--end::Heading-->
+                <!--begin::Clients-->
+                <div class="d-flex flex-center flex-wrap position-relative px-5">
+                    <!--begin::Client-->
+                    <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
+                        <img src="assets/media/svg/brand-logos/fujifilm.svg" class="mh-30px mh-lg-40px" alt=""/>
+                    </div>
+                    <!--end::Client-->
+                    <!--begin::Client-->
+                    <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
+                        <img src="assets/media/svg/brand-logos/vodafone.svg" class="mh-30px mh-lg-40px" alt=""/>
+                    </div>
+                    <!--end::Client-->
+                    <!--begin::Client-->
+                    <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="KPMG International">
+                        <img src="assets/media/svg/brand-logos/kpmg.svg" class="mh-30px mh-lg-40px" alt=""/>
+                    </div>
+                    <!--end::Client-->
+                    <!--begin::Client-->
+                    <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
+                        <img src="assets/media/svg/brand-logos/nasa.svg" class="mh-30px mh-lg-40px" alt=""/>
+                    </div>
+                    <!--end::Client-->
+                    <!--begin::Client-->
+                    <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
+                        <img src="assets/media/svg/brand-logos/aspnetzero.svg" class="mh-30px mh-lg-40px" alt=""/>
+                    </div>
+                    <!--end::Client-->
+                    <!--begin::Client-->
+                    <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="AON - Empower Results">
+                        <img src="assets/media/svg/brand-logos/aon.svg" class="mh-30px mh-lg-40px" alt=""/>
+                    </div>
+                    <!--end::Client-->
+                    <!--begin::Client-->
+                    <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
+                        <img src="assets/media/svg/brand-logos/hp-3.svg" class="mh-30px mh-lg-40px" alt=""/>
+                    </div>
+                    <!--end::Client-->
+                    <!--begin::Client-->
+                    <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
+                        <img src="assets/media/svg/brand-logos/truman.svg" class="mh-30px mh-lg-40px" alt=""/>
+                    </div>
+                    <!--end::Client-->
+                </div>
+                <!--end::Clients-->
+            </div>
+            <!--end::Landing hero-->
+        </div>
+        <!--end::Wrapper-->
+        <!--begin::Curve bottom-->
+        <div class="landing-curve landing-dark-color mb-10 mb-lg-20">
+            <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z"
+                      fill="currentColor"></path>
+            </svg>
+        </div>
+        <!--end::Curve bottom-->
+    </div>
+    <!--end::Header Section-->
+    <!--begin::How It Works Section-->
+    <div class="mb-n10 mb-lg-n20 z-index-2">
+        <!--begin::Container-->
+        <div class="container">
+            <!--begin::Heading-->
+            <div class="text-center mb-17">
+                <!--begin::Title-->
+                <h3 class="fs-2hx text-dark mb-5" id="how-it-works" data-kt-scroll-offset="{default: 100, lg: 150}">
+                    ¿Cómo funciona?</h3>
+                <!--end::Title-->
 
-			</div>
-			<!--end::Heading-->
-			<!--begin::Row-->
-			<div class="row w-100 gy-10 mb-md-20">
-				<!--begin::Col-->
-				<div class="col-md-3 px-5">
-					<!--begin::Story-->
-					<div class="text-center mb-10 mb-md-0">
-						<!--begin::Illustration-->
-						<img src="assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt="" />
-						<!--end::Illustration-->
-						<!--begin::Heading-->
-						<div class="d-flex flex-center mb-5">
-							<!--begin::Badge-->
-							<span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">1</span>
-							<!--end::Badge-->
-							<!--begin::Title-->
-							<div class="fs-5 fs-lg-3 fw-bold text-dark">Solicitud</div>
-							<!--end::Title-->
-						</div>
-						<!--end::Heading-->
-						<!--begin::Description-->
-						<div class="fw-semibold fs-6 fs-lg-4 text-muted">
-							Registras tus datos en la plantilla de formulario. <br>👆 <br>
-							<a href="#contanierContact" class="gtag" data-event="Click" data-label="Click boton funciona" data-category="Boton">
-								Solicitar aquí
-							</a></div>
-						<!--end::Description-->
-					</div>
-					<!--end::Story-->
-				</div>
-				<!--end::Col-->
-				<!--begin::Col-->
-				<div class="col-md-3 px-5">
-					<!--begin::Story-->
-					<div class="text-center mb-10 mb-md-0">
-						<!--begin::Illustration-->
-						<img src="assets/media/illustrations/sketchy-1/8.png" class="mh-125px mb-9" alt="" />
-						<!--end::Illustration-->
-						<!--begin::Heading-->
-						<div class="d-flex flex-center mb-5">
-							<!--begin::Badge-->
-							<span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">2</span>
-							<!--end::Badge-->
-							<!--begin::Title-->
-							<div class="fs-5 fs-lg-3 fw-bold text-dark">Contacto</div>
-							<!--end::Title-->
-						</div>
-						<!--end::Heading-->
-						<!--begin::Description-->
-						<div class="fw-semibold fs-6 fs-lg-4 text-muted">Un moderador se contactará contigo para aclarar cualquier duda al respecto. </div>
-						<!--end::Description-->
-					</div>
-					<!--end::Story-->
-				</div>
-				<!--end::Col-->
-				<!--begin::Col-->
-				<div class="col-md-3 px-5">
-					<!--begin::Story-->
-					<div class="text-center mb-10 mb-md-0">
-						<!--begin::Illustration-->
-						<img src="assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt="" />
-						<!--end::Illustration-->
-						<!--begin::Heading-->
-						<div class="d-flex flex-center mb-5">
-							<!--begin::Badge-->
-							<span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">3</span>
-							<!--end::Badge-->
-							<!--begin::Title-->
-							<div class="fs-5 fs-lg-3 fw-bold text-dark">Cancelación</div>
-							<!--end::Title-->
-						</div>
-						<!--end::Heading-->
-						<!--begin::Description-->
-						<div class="fw-semibold fs-6 fs-lg-4 text-muted">Cancela el valor de la asesoría, calculado según las horas de reunión. </div>
-						<!--end::Description-->
-					</div>
-					<!--end::Story-->
-				</div>
-				<!--end::Col-->
-				<!--begin::Col-->
-				<div class="col-md-3 px-5">
-					<!--begin::Story-->
-					<div class="text-center mb-10 mb-md-0">
-						<!--begin::Illustration-->
-						<img src="assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt="" />
-						<!--end::Illustration-->
-						<!--begin::Heading-->
-						<div class="d-flex flex-center mb-5">
-							<!--begin::Badge-->
-							<span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">4</span>
-							<!--end::Badge-->
-							<!--begin::Title-->
-							<div class="fs-5 fs-lg-3 fw-bold text-dark">Asignación</div>
-							<!--end::Title-->
-						</div>
-						<!--end::Heading-->
-						<!--begin::Description-->
-						<div class="fw-semibold fs-6 fs-lg-4 text-muted">Se te asignará un asesor, para guiarte durante todo el proceso.  </div>
-						<!--end::Description-->
-					</div>
-					<!--end::Story-->
-				</div>
-				<!--end::Col-->
-			</div>
-			<!--end::Row-->
-			<!--begin::Product slider-->
-			<div class="tns tns-default">
-				<!--begin::Slider-->
-				<div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
-					<!--begin::Item-->
-					<div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-						<img src="assets/media/preview/demos/demo1/light-ltr.png" class="card-rounded shadow mh-lg-650px mw-100" alt="" />
-					</div>
-					<!--end::Item-->
-					<!--begin::Item-->
-					<div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-						<img src="assets/media/preview/demos/demo2/light-ltr.png" class="card-rounded shadow mh-lg-650px mw-100" alt="" />
-					</div>
-					<!--end::Item-->
-					<!--begin::Item-->
-					<div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-						<img src="assets/media/preview/demos/demo4/light-ltr.png" class="card-rounded shadow mh-lg-650px mw-100" alt="" />
-					</div>
-					<!--end::Item-->
-					<!--begin::Item-->
-					<div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
-						<img src="assets/media/preview/demos/demo5/light-ltr.png" class="card-rounded shadow mh-lg-650px mw-100" alt="" />
-					</div>
-					<!--end::Item-->
-				</div>
-				<!--end::Slider-->
-				<!--begin::Slider button-->
-				<button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev1">
-					<i class="ki-duotone ki-left fs-2x"></i>
-				</button>
-				<!--end::Slider button-->
-				<!--begin::Slider button-->
-				<button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next1">
-					<i class="ki-duotone ki-right fs-2x"></i>
-				</button>
-				<!--end::Slider button-->
-			</div>
-			<!--end::Product slider-->
-		</div>
-		<!--end::Container-->
-	</div>
-	<!--end::How It Works Section-->
+            </div>
+            <!--end::Heading-->
+            <!--begin::Row-->
+            <div class="row w-100 gy-10 mb-md-20">
+                <!--begin::Col-->
+                <div class="col-md-3 px-5">
+                    <!--begin::Story-->
+                    <div class="text-center mb-10 mb-md-0">
+                        <!--begin::Illustration-->
+                        <img src="assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt=""/>
+                        <!--end::Illustration-->
+                        <!--begin::Heading-->
+                        <div class="d-flex flex-center mb-5">
+                            <!--begin::Badge-->
+                            <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">1</span>
+                            <!--end::Badge-->
+                            <!--begin::Title-->
+                            <div class="fs-5 fs-lg-3 fw-bold text-dark">Solicitud</div>
+                            <!--end::Title-->
+                        </div>
+                        <!--end::Heading-->
+                        <!--begin::Description-->
+                        <div class="fw-semibold fs-6 fs-lg-4 text-muted">
+                            Registras tus datos en la plantilla de formulario. <br>👆 <br>
+                            <a href="#contanierContact" class="gtag" data-event="Click"
+                               data-label="Click boton funciona" data-category="Boton">
+                                Solicitar aquí
+                            </a></div>
+                        <!--end::Description-->
+                    </div>
+                    <!--end::Story-->
+                </div>
+                <!--end::Col-->
+                <!--begin::Col-->
+                <div class="col-md-3 px-5">
+                    <!--begin::Story-->
+                    <div class="text-center mb-10 mb-md-0">
+                        <!--begin::Illustration-->
+                        <img src="assets/media/illustrations/sketchy-1/8.png" class="mh-125px mb-9" alt=""/>
+                        <!--end::Illustration-->
+                        <!--begin::Heading-->
+                        <div class="d-flex flex-center mb-5">
+                            <!--begin::Badge-->
+                            <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">2</span>
+                            <!--end::Badge-->
+                            <!--begin::Title-->
+                            <div class="fs-5 fs-lg-3 fw-bold text-dark">Contacto</div>
+                            <!--end::Title-->
+                        </div>
+                        <!--end::Heading-->
+                        <!--begin::Description-->
+                        <div class="fw-semibold fs-6 fs-lg-4 text-muted">Un moderador se contactará contigo para aclarar
+                            cualquier duda al respecto.
+                        </div>
+                        <!--end::Description-->
+                    </div>
+                    <!--end::Story-->
+                </div>
+                <!--end::Col-->
+                <!--begin::Col-->
+                <div class="col-md-3 px-5">
+                    <!--begin::Story-->
+                    <div class="text-center mb-10 mb-md-0">
+                        <!--begin::Illustration-->
+                        <img src="assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt=""/>
+                        <!--end::Illustration-->
+                        <!--begin::Heading-->
+                        <div class="d-flex flex-center mb-5">
+                            <!--begin::Badge-->
+                            <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">3</span>
+                            <!--end::Badge-->
+                            <!--begin::Title-->
+                            <div class="fs-5 fs-lg-3 fw-bold text-dark">Cancelación</div>
+                            <!--end::Title-->
+                        </div>
+                        <!--end::Heading-->
+                        <!--begin::Description-->
+                        <div class="fw-semibold fs-6 fs-lg-4 text-muted">Cancela el valor de la asesoría, calculado
+                            según las horas de reunión.
+                        </div>
+                        <!--end::Description-->
+                    </div>
+                    <!--end::Story-->
+                </div>
+                <!--end::Col-->
+                <!--begin::Col-->
+                <div class="col-md-3 px-5">
+                    <!--begin::Story-->
+                    <div class="text-center mb-10 mb-md-0">
+                        <!--begin::Illustration-->
+                        <img src="assets/media/illustrations/sketchy-1/12.png" class="mh-125px mb-9" alt=""/>
+                        <!--end::Illustration-->
+                        <!--begin::Heading-->
+                        <div class="d-flex flex-center mb-5">
+                            <!--begin::Badge-->
+                            <span class="badge badge-circle badge-light-success fw-bold p-5 me-3 fs-3">4</span>
+                            <!--end::Badge-->
+                            <!--begin::Title-->
+                            <div class="fs-5 fs-lg-3 fw-bold text-dark">Asignación</div>
+                            <!--end::Title-->
+                        </div>
+                        <!--end::Heading-->
+                        <!--begin::Description-->
+                        <div class="fw-semibold fs-6 fs-lg-4 text-muted">Se te asignará un asesor, para guiarte durante
+                            todo el proceso.
+                        </div>
+                        <!--end::Description-->
+                    </div>
+                    <!--end::Story-->
+                </div>
+                <!--end::Col-->
+            </div>
+            <!--end::Row-->
+            <!--begin::Product slider-->
+            <div class="tns tns-default">
+                <!--begin::Slider-->
+                <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000"
+                     data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true"
+                     data-tns-nav="false" data-tns-items="1" data-tns-center="false" data-tns-dots="false"
+                     data-tns-prev-button="#kt_team_slider_prev1" data-tns-next-button="#kt_team_slider_next1">
+                    <!--begin::Item-->
+                    <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                        <img src="assets/media/preview/demos/demo1/light-ltr.png"
+                             class="card-rounded shadow mh-lg-650px mw-100" alt=""/>
+                    </div>
+                    <!--end::Item-->
+                    <!--begin::Item-->
+                    <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                        <img src="assets/media/preview/demos/demo2/light-ltr.png"
+                             class="card-rounded shadow mh-lg-650px mw-100" alt=""/>
+                    </div>
+                    <!--end::Item-->
+                    <!--begin::Item-->
+                    <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                        <img src="assets/media/preview/demos/demo4/light-ltr.png"
+                             class="card-rounded shadow mh-lg-650px mw-100" alt=""/>
+                    </div>
+                    <!--end::Item-->
+                    <!--begin::Item-->
+                    <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10">
+                        <img src="assets/media/preview/demos/demo5/light-ltr.png"
+                             class="card-rounded shadow mh-lg-650px mw-100" alt=""/>
+                    </div>
+                    <!--end::Item-->
+                </div>
+                <!--end::Slider-->
+                <!--begin::Slider button-->
+                <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev1">
+                    <i class="ki-duotone ki-left fs-2x"></i>
+                </button>
+                <!--end::Slider button-->
+                <!--begin::Slider button-->
+                <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next1">
+                    <i class="ki-duotone ki-right fs-2x"></i>
+                </button>
+                <!--end::Slider button-->
+            </div>
+            <!--end::Product slider-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::How It Works Section-->
 
-	<!--begin::Team Section-->
-	<div class="py-10 py-lg-20">
-		<!--begin::Container-->
-		<div class="container">
-			<!--begin::Heading-->
-			<div class="text-center mb-12">
-				<!--begin::Title-->
-				<h3 class="fs-2hx text-dark mb-5" id="team" data-kt-scroll-offset="{default: 100, lg: 150}">Preguntas Frecuentes</h3>
-				<!--end::Title-->
+    <!--begin::Team Section-->
+    <div class="py-10 py-lg-20">
+        <!--begin::Container-->
+        <div class="container">
+            <!--begin::Heading-->
+            <div class="text-center mb-12">
+                <!--begin::Title-->
+                <h3 class="fs-2hx text-dark mb-5" id="team" data-kt-scroll-offset="{default: 100, lg: 150}">Preguntas
+                    Frecuentes</h3>
+                <!--end::Title-->
 
-			</div>
-			<!--end::Heading-->
-			<!--begin::Slider-->
+            </div>
+            <!--end::Heading-->
+            <!--begin::Slider-->
 
-			<div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu" data-kt-menu="true" data-kt-menu-expand="false">
+            <div class="menu menu-column menu-rounded menu-sub-indention px-3" id="#kt_app_sidebar_menu"
+                 data-kt-menu="true" data-kt-menu-expand="false">
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Cómo es el proceso de cotización de un trabajo?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						1. Llena el formulario <a href="#cotizar"> 👉 Aquí</a>.<br>2. Espera el contacto de un moderador,
-						quién te va a enviar la cotización del trabajo. <br>3. Realiza el pago para poder iniciar con tu trabajo.<br>4. Recibe tu trabajo por medio de WhatsApp y correo electrónico suministrado.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        1. Llena el formulario <a href="#cotizar"> 👉 Aquí</a>.<br>2. Espera el contacto de un
+                        moderador,
+                        quién te va a enviar la cotización del trabajo. <br>3. Realiza el pago para poder iniciar con tu
+                        trabajo.<br>4. Recibe tu trabajo por medio de WhatsApp y correo electrónico suministrado.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿El trabajo tiene algún costo?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Si tiene costo, lastimosamente no podemos realizar trabajos gratis porque somos una empresa constituida y tenemos procesos establedidos, es tiempo de todos.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Si tiene costo, lastimosamente no podemos realizar trabajos gratis porque somos una empresa
+                        constituida y tenemos procesos establedidos, es tiempo de todos.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Con cuánto tiempo de anticipación debo hacer la solicitud de mi trabajo Universitario?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Al menos con 24 horas de anticipación, pero depende de la extensión y las indicaciones del trabajo, se revisará para ver si es posible cotizar.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Al menos con 24 horas de anticipación, pero depende de la extensión y las indicaciones del
+                        trabajo, se revisará para ver si es posible cotizar.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Hacen trabajos de grado o tesis?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Realizamos trabajos y tesis de grado dependiendo los las indicaciones enviadas, que sean completas con formatos de la universidad y aclarando todas las dudas sugeridas, es necesario conocer la carrera Universitaria para revisar la disponibilidad de asesores.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Realizamos trabajos y tesis de grado dependiendo los las indicaciones enviadas, que sean
+                        completas con formatos de la universidad y aclarando todas las dudas sugeridas, es necesario
+                        conocer la carrera Universitaria para revisar la disponibilidad de asesores.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Qué garantías me dan del trabajo?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Todos los trabajos que realizamos incluyen correcciones de lo entregado y solicitado inicialmente, si tienes algún cambio que no esté dentro de lo cotizado vendría a ser adicional, se tendría que cotizar nuevamente y a su vez extender la fecha de entrega.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Todos los trabajos que realizamos incluyen correcciones de lo entregado y solicitado
+                        inicialmente, si tienes algún cambio que no esté dentro de lo cotizado vendría a ser adicional,
+                        se tendría que cotizar nuevamente y a su vez extender la fecha de entrega.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Cuánto tiempo tengo para enviar correcciones del trabajo?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Nuestra política es de 10 días calendario para recibir correcciones de los trabajos, a excepción de los trabajos de grado o tesis.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Nuestra política es de 10 días calendario para recibir correcciones de los trabajos, a excepción
+                        de los trabajos de grado o tesis.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Es sólo para trabajos Universitarios?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Nos enfocamos más en trabajos universitarios pero podemos revisar tu solicitud para confirmar si puede ser atendida y cotizada.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Nos enfocamos más en trabajos universitarios pero podemos revisar tu solicitud para confirmar si
+                        puede ser atendida y cotizada.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Hacen trabajos en inglés?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Contamos con asesores expertos en el área de inglés, se debe tener en cuenta la materia del trabajo y carrera Universitaria para confirmar si tenemos asesores disponibles.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Contamos con asesores expertos en el área de inglés, se debe tener en cuenta la materia del
+                        trabajo y carrera Universitaria para confirmar si tenemos asesores disponibles.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Mi dinero está seguro?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Si está seguro, para tu tranquilidad somos la primer empresa de trabajos universitarios en implementar facturación electrónica y legal asegurando tu dinero hasta la entrega del trabajo.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Si está seguro, para tu tranquilidad somos la primer empresa de trabajos universitarios en
+                        implementar facturación electrónica y legal asegurando tu dinero hasta la entrega del trabajo.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Cuánto es la tarifa promedio para un trabajo?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Los precios dependen de las características del trabajo, normas, cantidad de palabras, fecha de entrega, etc. La cotización es gratis.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Los precios dependen de las características del trabajo, normas, cantidad de palabras, fecha de
+                        entrega, etc. La cotización es gratis.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Sólo se puede pagar con tarjeta de crédito?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Puedes realizar el pago por direfentes medios ZELLE o MasterCard.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Puedes realizar el pago por direfentes medios ZELLE o MasterCard.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Los asesores son expertos haciendo Trabajos Universitarios?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Contamos con un equipo de asesores expertos en diferentes áreas académicas y en la realización de trabajos Unversitarios.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Contamos con un equipo de asesores expertos en diferentes áreas académicas y en la realización
+                        de trabajos Unversitarios.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Por qué no hacemos trabajos de colegio?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Las bases para la vida universitaria se construyen desde el colegio. El colegio debe formar al estudiante en base a la investigación y resolución de tareas como aprendizaje para abordar problemas básicos universitarios.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Las bases para la vida universitaria se construyen desde el colegio. El colegio debe formar al
+                        estudiante en base a la investigación y resolución de tareas como aprendizaje para abordar
+                        problemas básicos universitarios.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Hacen parciales Universitarios?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Nuestro principal objetivo es el acompañamiento de los estudiantes, consideramos un parcial como la prueba que valida lo aprendido en clase por el estudiante. Lo que si realizamos es la preparación y asesoría para responder los parciales, sea con video llamada o realización de ejercicios para estudio, además no podemos hacernos responsables de la nota final de materias por realizaciones de parciales.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Nuestro principal objetivo es el acompañamiento de los estudiantes, consideramos un parcial como
+                        la prueba que valida lo aprendido en clase por el estudiante. Lo que si realizamos es la
+                        preparación y asesoría para responder los parciales, sea con video llamada o realización de
+                        ejercicios para estudio, además no podemos hacernos responsables de la nota final de materias
+                        por realizaciones de parciales.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-				<!--begin:Menu item-->
-				<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-					<!--begin:Menu link-->
-					<span class="menu-link">
+                <!--begin:Menu item-->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <!--begin:Menu link-->
+                    <span class="menu-link">
 											<span class="menu-title"><strong>¿Cúales son los horarios de atención?</strong></span>
 											<span class="menu-arrow"></span>
 										</span>
-					<!--end:Menu link-->
-					<!--begin:Menu sub-->
-					<div class="menu-sub menu-sub-accordion">
-						Somos una empresa digital la cual está disponible el 100% del tiempo, si que debemos tener en cuenta que nuestros moderadores y asesores necesitan tener espacios para descansar, comer y dormir, por esta razón hay que darles su tiempo, para agilidad en el proceso de cotización de trabajo universitario,  llena el formulario <a href="#cotizar"> 👉 Aquí</a>.
-					</div>
-					<!--end:Menu sub-->
-				</div>
-				<!--end:Menu item-->
+                    <!--end:Menu link-->
+                    <!--begin:Menu sub-->
+                    <div class="menu-sub menu-sub-accordion">
+                        Somos una empresa digital la cual está disponible el 100% del tiempo, si que debemos tener en
+                        cuenta que nuestros moderadores y asesores necesitan tener espacios para descansar, comer y
+                        dormir, por esta razón hay que darles su tiempo, para agilidad en el proceso de cotización de
+                        trabajo universitario, llena el formulario <a href="#cotizar"> 👉 Aquí</a>.
+                    </div>
+                    <!--end:Menu sub-->
+                </div>
+                <!--end:Menu item-->
 
-			</div>
-			<!--end::Slider-->
-		</div>
-		<!--end::Container-->
-	</div>
-	<!--end::Team Section-->
-	<!--begin::Projects Section-->
-	<div class="mb-lg-n15 position-relative z-index-2">
-		<!--begin::Container-->
-		<div class="container">
-			<!--begin::Card-->
-			<div class="card" style="filter: drop-shadow(0px 0px 40px rgba(68, 81, 96, 0.08))">
-				<!--begin::Card body-->
-				<div class="card-body p-lg-20">
-					<!--begin::Heading-->
-					<div class="text-center mb-5 mb-lg-10">
-						<!--begin::Title-->
-						<h3 class="fs-2hx text-dark mb-5" id="portfolio" data-kt-scroll-offset="{default: 100, lg: 250}">Métodos de pago</h3>
-						<!--end::Title-->
-					</div>
-					<!--end::Heading-->
-					<!--begin::Tabs wrapper-->
-					<div class="d-flex flex-center mb-5 mb-lg-15">
-						<!--begin::Tabs-->
-						<ul class="nav border-transparent flex-center fs-5 fw-bold">
-
-
-						</ul>
-						<!--end::Tabs-->
-					</div>
-					<!--end::Tabs wrapper-->
-					<!--begin::Tabs content-->
-					<div class="tab-content">
-						<!--begin::Tab pane-->
-						<div class="tab-pane fade show active" id="kt_landing_projects_latest">
-							<!--begin::Row-->
-							<div class="row g-10">
-								<!--begin::Col-->
-								<div class="col-lg-6">
-									<!--begin::Row-->
-									<div class="row g-10 mb-10">
-
-										<!--begin::Col-->
-										<!--<div class="col-lg-6">
-											&lt;!&ndash;begin::Item&ndash;&gt;
-											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-23.jpg">
-												&lt;!&ndash;begin::Image&ndash;&gt;
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-23.png')"></div>
-												&lt;!&ndash;end::Image&ndash;&gt;
-												&lt;!&ndash;begin::Action&ndash;&gt;
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="ki-duotone ki-eye fs-3x text-white">
-														<span class="path1"></span>
-														<span class="path2"></span>
-														<span class="path3"></span>
-													</i>
-												</div>
-												&lt;!&ndash;end::Action&ndash;&gt;
-											</a>
-											&lt;!&ndash;end::Item&ndash;&gt;
-										</div>-->
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-									<!--begin::Item-->
-									<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/mastercard.jpg">
-										<!--begin::Image-->
-										<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-23.png')"></div>
-										<!--end::Image-->
-										<!--begin::Action-->
-										<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-											<i class="ki-duotone ki-eye fs-3x text-white">
-												<span class="path1"></span>
-												<span class="path2"></span>
-												<span class="path3"></span>
-											</i>
-										</div>
-										<!--end::Action-->
-									</a>
-									<!--end::Item-->
-								</div>
-								<!--end::Col-->
-								<!--begin::Col-->
-								<div class="col-lg-6">
-									<!--begin::Item-->
-									<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/zelle.png">
-										<!--begin::Image-->
-										<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('assets/media/stock/600x600/zelle.png')"></div>
-										<!--end::Image-->
-										<!--begin::Action-->
-										<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-											<i class="ki-duotone ki-eye fs-3x text-white">
-												<span class="path1"></span>
-												<span class="path2"></span>
-												<span class="path3"></span>
-											</i>
-										</div>
-										<!--end::Action-->
-									</a>
-									<!--end::Item-->
-								</div>
-								<!--end::Col-->
-
-							</div>
-							<!--end::Row-->
-						</div>
-						<!--end::Tab pane-->
-
-					</div>
-					<!--end::Tabs content-->
-				</div>
-				<!--end::Card body-->
-			</div>
-			<!--end::Card-->
-		</div>
-		<!--end::Container-->
-	</div>
-	<!--end::Projects Section-->
-	<!--begin::Pricing Section-->
-	<div class="mt-sm-n20">
-		<!--begin::Curve top-->
-		<div class="landing-curve landing-dark-color">
-			<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
-			</svg>
-		</div>
-		<!--end::Curve top-->
-		<!--begin::Wrapper-->
-		<div class="py-20 landing-dark-bg">
-			<!--begin::Container-->
-			<div class="container">
-				<!--begin::Plans-->
-				<div class="d-flex flex-column container pt-lg-20">
-					<!--begin::Heading-->
-					<div class="mb-13 text-center">
-						<h1 class="fs-2hx fw-bold text-white mb-5" id="pricing" data-kt-scroll-offset="{default: 100, lg: 150}">Ayuda Académica para Estudiantes de Origen Latino: Servicio Especializado en EE. UU. </h1>
-						<div class="text-gray-600 fw-semibold fs-5">Una de nuestras prioridades principales es brindar asistencia académica a los estudiantes de origen latino que residen en los Estados Unidos de América. Nuestro equipo está preparado para brindarle el apoyo que necesita para tener éxito académico porque sabemos que adaptarse al entorno universitario en un nuevo país puede ser difícil.
-							Se ofrece el servicio en los Estados de USA en que contamos con mayor número de clientes estudiantes como son Florida, Washington, Illinois, Texas, California, North Carolina, Georgia, Virginia, Iowa, Wyoming, y New Jersey. Principalmente, los tutores hacen tus tareas universitarias en Estados Unidos, en las ciudades de Miami, Orlando, Chicago, Hialeah, Dallas, Los Ángeles, Charlotte, Atlanta, y Des Moines.
-							A lo largo de los 4 o 5 años de duración que tiene esta carrera, se ven poco más de 30 materias. Aunque, por supuesto, esto puede variar según el plan de estudios de cada institución educativa.
-							Aun así, independientemente de la universidad que elijas, te ayudaremos en las diferentes materias donde aprenderás desde los conocimientos básicos hasta los más avanzados, a fin de brindar un servicio de calidad en cualquier centro de salud público o privado.
-						</div>
-					</div>
-					<!--end::Heading-->
-					<h3 style="color: white">Estamos disponibles para todos los ciclos y todas las materias:<p/>
-					<!--begin::Pricing-->
-					<div class="text-center" id="kt_pricing">
-
-						<!--begin::Row-->
-						<div class="row g-10">
-							<!--begin::Col-->
-							<div class="col-xl-4">
-								<div class="d-flex h-100 align-items-center">
-									<!--begin::Option-->
-									<div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
-										<!--begin::Heading-->
-										<div class="mb-7 text-center">
-											<!--begin::Title-->
-											<h1 class="text-dark mb-5 fw-boldest">Ciclo introductorio</h1>
-											<!--end::Title-->
-
-										</div>
-										<!--end::Heading-->
-										<!--begin::Features-->
-										<div class="w-100 mb-10">
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Introducción a la Enfermería</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Anatomía y Fisiología</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Básica</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Psicología General</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Biología</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Bioquímica</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Morfofisiología I y II</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Salud Pública</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Nutrición</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Microbiología y Parasitología</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
+            </div>
+            <!--end::Slider-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Team Section-->
+    <!--begin::Projects Section-->
+    <div class="mb-lg-n15 position-relative z-index-2">
+        <!--begin::Container-->
+        <div class="container">
+            <!--begin::Card-->
+            <div class="card" style="filter: drop-shadow(0px 0px 40px rgba(68, 81, 96, 0.08))">
+                <!--begin::Card body-->
+                <div class="card-body p-lg-20">
+                    <!--begin::Heading-->
+                    <div class="text-center mb-5 mb-lg-10">
+                        <!--begin::Title-->
+                        <h3 class="fs-2hx text-dark mb-5" id="portfolio"
+                            data-kt-scroll-offset="{default: 100, lg: 250}">Métodos de pago</h3>
+                        <!--end::Title-->
+                    </div>
+                    <!--end::Heading-->
+                    <!--begin::Tabs wrapper-->
+                    <div class="d-flex flex-center mb-5 mb-lg-15">
+                        <!--begin::Tabs-->
+                        <ul class="nav border-transparent flex-center fs-5 fw-bold">
 
 
-										</div>
-										<!--end::Features-->
+                        </ul>
+                        <!--end::Tabs-->
+                    </div>
+                    <!--end::Tabs wrapper-->
+                    <!--begin::Tabs content-->
+                    <div class="tab-content">
+                        <!--begin::Tab pane-->
+                        <div class="tab-pane fade show active" id="kt_landing_projects_latest">
+                            <!--begin::Row-->
+                            <div class="row g-10">
+                                <!--begin::Col-->
+                                <div class="col-lg-6">
+                                    <!--begin::Row-->
+                                    <div class="row g-10 mb-10">
 
-									</div>
-									<!--end::Option-->
-								</div>
-							</div>
-							<!--end::Col-->
-							<!--begin::Col-->
-							<div class="col-xl-4">
-								<div class="d-flex h-100 align-items-center">
-									<!--begin::Option-->
-									<div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
-										<!--begin::Heading-->
-										<div class="mb-7 text-center">
-											<!--begin::Title-->
-											<h1 class="text-dark mb-5 fw-boldest">Ciclo de formación media</h1>
-											<!--end::Title-->
+                                        <!--begin::Col-->
+                                        <!--<div class="col-lg-6">
+                                            &lt;!&ndash;begin::Item&ndash;&gt;
+                                            <a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-23.jpg">
+                                                &lt;!&ndash;begin::Image&ndash;&gt;
+                                                <div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-23.png')"></div>
+                                                &lt;!&ndash;end::Image&ndash;&gt;
+                                                &lt;!&ndash;begin::Action&ndash;&gt;
+                                                <div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+                                                    <i class="ki-duotone ki-eye fs-3x text-white">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                        <span class="path3"></span>
+                                                    </i>
+                                                </div>
+                                                &lt;!&ndash;end::Action&ndash;&gt;
+                                            </a>
+                                            &lt;!&ndash;end::Item&ndash;&gt;
+                                        </div>-->
+                                        <!--end::Col-->
+                                    </div>
+                                    <!--end::Row-->
+                                    <!--begin::Item-->
+                                    <a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects"
+                                       href="assets/media/stock/600x600/mastercard.jpg">
+                                        <!--begin::Image-->
+                                        <div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px"
+                                             style="background-image:url('assets/media/stock/600x600/img-23.png')"></div>
+                                        <!--end::Image-->
+                                        <!--begin::Action-->
+                                        <div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+                                            <i class="ki-duotone ki-eye fs-3x text-white">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                                <span class="path3"></span>
+                                            </i>
+                                        </div>
+                                        <!--end::Action-->
+                                    </a>
+                                    <!--end::Item-->
+                                </div>
+                                <!--end::Col-->
+                                <!--begin::Col-->
+                                <div class="col-lg-6">
+                                    <!--begin::Item-->
+                                    <a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects"
+                                       href="assets/media/stock/600x600/zelle.png">
+                                        <!--begin::Image-->
+                                        <div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px"
+                                             style="background-image:url('assets/media/stock/600x600/zelle.png')"></div>
+                                        <!--end::Image-->
+                                        <!--begin::Action-->
+                                        <div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+                                            <i class="ki-duotone ki-eye fs-3x text-white">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                                <span class="path3"></span>
+                                            </i>
+                                        </div>
+                                        <!--end::Action-->
+                                    </a>
+                                    <!--end::Item-->
+                                </div>
+                                <!--end::Col-->
 
-										</div>
-										<!--end::Heading-->
-										<!--begin::Features-->
-										<div class="w-100 mb-10">
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Lenguaje de Enfermería</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Crecimiento y Desarrollo I y II</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Farmacología básica y aplicada</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Comunitaria</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Bioestadística</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Obstétrica y Ginecológica</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Pediátrica</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Clínico-Quirúrgica del adulto y del adulto mayor</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Ecología y Salud</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Ética Profesional</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
+                            </div>
+                            <!--end::Row-->
+                        </div>
+                        <!--end::Tab pane-->
+
+                    </div>
+                    <!--end::Tabs content-->
+                </div>
+                <!--end::Card body-->
+            </div>
+            <!--end::Card-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Projects Section-->
+    <!--begin::Pricing Section-->
+    <div class="mt-sm-n20">
+        <!--begin::Curve top-->
+        <div class="landing-curve landing-dark-color">
+            <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z"
+                      fill="currentColor"></path>
+            </svg>
+        </div>
+        <!--end::Curve top-->
+        <!--begin::Wrapper-->
+        <div class="py-20 landing-dark-bg">
+            <!--begin::Container-->
+            <div class="container">
+                <!--begin::Plans-->
+                <div class="d-flex flex-column container pt-lg-20">
+                    <!--begin::Heading-->
+                    <div class="mb-13 text-center">
+                        <h1 class="fs-2hx fw-bold text-white mb-5" id="pricing"
+                            data-kt-scroll-offset="{default: 100, lg: 150}">Ayuda Académica para Estudiantes de Origen
+                            Latino: Servicio Especializado en EE. UU. </h1>
+                        <div class="text-gray-600 fw-semibold fs-5">Una de nuestras prioridades principales es brindar
+                            asistencia académica a los estudiantes de origen latino que residen en los Estados Unidos de
+                            América. Nuestro equipo está preparado para brindarle el apoyo que necesita para tener éxito
+                            académico porque sabemos que adaptarse al entorno universitario en un nuevo país puede ser
+                            difícil.
+                            Se ofrece el servicio en los Estados de USA en que contamos con mayor número de clientes
+                            estudiantes como son Florida, Washington, Illinois, Texas, California, North Carolina,
+                            Georgia, Virginia, Iowa, Wyoming, y New Jersey. Principalmente, los tutores hacen tus tareas
+                            universitarias en Estados Unidos, en las ciudades de Miami, Orlando, Chicago, Hialeah,
+                            Dallas, Los Ángeles, Charlotte, Atlanta, y Des Moines.
+                            A lo largo de los 4 o 5 años de duración que tiene esta carrera, se ven poco más de 30
+                            materias. Aunque, por supuesto, esto puede variar según el plan de estudios de cada
+                            institución educativa.
+                            Aun así, independientemente de la universidad que elijas, te ayudaremos en las diferentes
+                            materias donde aprenderás desde los conocimientos básicos hasta los más avanzados, a fin de
+                            brindar un servicio de calidad en cualquier centro de salud público o privado.
+                        </div>
+                    </div>
+                    <!--end::Heading-->
+                    <h3 style="color: white">Estamos disponibles para todos los ciclos y todas las materias:<p/>
+                        <!--begin::Pricing-->
+                        <div class="text-center" id="kt_pricing">
+
+                            <!--begin::Row-->
+                            <div class="row g-10">
+                                <!--begin::Col-->
+                                <div class="col-xl-4">
+                                    <div class="d-flex h-100 align-items-center">
+                                        <!--begin::Option-->
+                                        <div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
+                                            <!--begin::Heading-->
+                                            <div class="mb-7 text-center">
+                                                <!--begin::Title-->
+                                                <h1 class="text-dark mb-5 fw-boldest">Ciclo introductorio</h1>
+                                                <!--end::Title-->
+
+                                            </div>
+                                            <!--end::Heading-->
+                                            <!--begin::Features-->
+                                            <div class="w-100 mb-10">
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Introducción a la Enfermería</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Anatomía y Fisiología</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Básica</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Psicología General</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Biología</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Bioquímica</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Morfofisiología I y II</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Salud Pública</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Nutrición</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Microbiología y Parasitología</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
 
 
+                                            </div>
+                                            <!--end::Features-->
 
-										</div>
-										<!--end::Features-->
+                                        </div>
+                                        <!--end::Option-->
+                                    </div>
+                                </div>
+                                <!--end::Col-->
+                                <!--begin::Col-->
+                                <div class="col-xl-4">
+                                    <div class="d-flex h-100 align-items-center">
+                                        <!--begin::Option-->
+                                        <div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
+                                            <!--begin::Heading-->
+                                            <div class="mb-7 text-center">
+                                                <!--begin::Title-->
+                                                <h1 class="text-dark mb-5 fw-boldest">Ciclo de formación media</h1>
+                                                <!--end::Title-->
 
-									</div>
-									<!--end::Option-->
-								</div>
-							</div>
-							<!--end::Col-->
-							<!--begin::Col-->
-							<div class="col-xl-4">
-								<div class="d-flex h-100 align-items-center">
-									<!--begin::Option-->
-									<div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
-										<!--begin::Heading-->
-										<div class="mb-7 text-center">
-											<!--begin::Title-->
-											<h1 class="text-dark mb-5 fw-boldest">Ciclo de integración profesional</h1>
-											<!--end::Title-->
+                                            </div>
+                                            <!--end::Heading-->
+                                            <!--begin::Features-->
+                                            <div class="w-100 mb-10">
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Lenguaje de Enfermería</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Crecimiento y Desarrollo I y II</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Farmacología básica y aplicada</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Comunitaria</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Bioestadística</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Obstétrica y Ginecológica</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Pediátrica</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Clínico-Quirúrgica del adulto y del adulto mayor</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Ecología y Salud</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Ética Profesional</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
 
-										</div>
-										<!--end::Heading-->
-										<!--begin::Features-->
-										<div class="w-100 mb-10">
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Primeros auxilios</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería en Salud Mental y Psiquiatría</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Gestión del Cuidado Paliativo</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Clínica Avanzada</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Quirúrgica Avanzada</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Pediátrica Avanzada</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-stack mb-5">
-												<span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Avanzada Gíneco-Obstétrica</span>
-												<i class="ki-duotone ki-check-circle fs-1 text-success">
-													<span class="path1"></span>
-													<span class="path2"></span>
-												</i>
-											</div>
-											<!--end::Item-->
+
+                                            </div>
+                                            <!--end::Features-->
+
+                                        </div>
+                                        <!--end::Option-->
+                                    </div>
+                                </div>
+                                <!--end::Col-->
+                                <!--begin::Col-->
+                                <div class="col-xl-4">
+                                    <div class="d-flex h-100 align-items-center">
+                                        <!--begin::Option-->
+                                        <div class="w-100 d-flex flex-column flex-center rounded-3 bg-body py-15 px-10">
+                                            <!--begin::Heading-->
+                                            <div class="mb-7 text-center">
+                                                <!--begin::Title-->
+                                                <h1 class="text-dark mb-5 fw-boldest">Ciclo de integración
+                                                    profesional</h1>
+                                                <!--end::Title-->
+
+                                            </div>
+                                            <!--end::Heading-->
+                                            <!--begin::Features-->
+                                            <div class="w-100 mb-10">
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Primeros auxilios</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería en Salud Mental y Psiquiatría</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Gestión del Cuidado Paliativo</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Clínica Avanzada</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Quirúrgica Avanzada</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Pediátrica Avanzada</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
+                                                <!--begin::Item-->
+                                                <div class="d-flex flex-stack mb-5">
+                                                    <span class="fw-semibold fs-6 text-gray-800 text-start pe-3">Enfermería Avanzada Gíneco-Obstétrica</span>
+                                                    <i class="ki-duotone ki-check-circle fs-1 text-success">
+                                                        <span class="path1"></span>
+                                                        <span class="path2"></span>
+                                                    </i>
+                                                </div>
+                                                <!--end::Item-->
 
 
+                                            </div>
+                                            <!--end::Features-->
 
-										</div>
-										<!--end::Features-->
+                                        </div>
+                                        <!--end::Option-->
+                                    </div>
+                                </div>
+                                <!--end::Col-->
+                            </div>
+                            <!--end::Row-->
+                        </div>
+                        <!--end::Pricing-->
+                </div>
+                <!--end::Plans-->
+            </div>
+            <!--end::Container-->
+        </div>
+        <!--end::Wrapper-->
+        <!--begin::Curve bottom-->
+        <div class="landing-curve landing-dark-color">
+            <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z"
+                      fill="currentColor"></path>
+            </svg>
+        </div>
+        <!--end::Curve bottom-->
+    </div>
+    <!--end::Pricing Section-->
 
-									</div>
-									<!--end::Option-->
-								</div>
-							</div>
-							<!--end::Col-->
-						</div>
-						<!--end::Row-->
-					</div>
-					<!--end::Pricing-->
-				</div>
-				<!--end::Plans-->
-			</div>
-			<!--end::Container-->
-		</div>
-		<!--end::Wrapper-->
-		<!--begin::Curve bottom-->
-		<div class="landing-curve landing-dark-color">
-			<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
-			</svg>
-		</div>
-		<!--end::Curve bottom-->
-	</div>
-	<!--end::Pricing Section-->
-	<!--begin::Testimonials Section-->
-	<div class="mt-20 mb-n20 position-relative z-index-2">
-		<!--begin::Container-->
-		<div class="container">
-			<!--begin::Heading-->
-			<div class="text-center mb-17">
-				<!--begin::Title-->
-				<h3 class="fs-2hx text-dark mb-5" id="clients" data-kt-scroll-offset="{default: 125, lg: 150}">Opiniones Sobre nosotros</h3>
-				<!--end::Title-->
-				<!--begin::Description-->
-				<div class="fs-5 text-muted fw-bold">Save thousands to millions of bucks by using single tool
-					<br />for different amazing and great useful admin</div>
-				<!--end::Description-->
-			</div>
-			<!--end::Heading-->
-			<!--begin::Row-->
-			<div class="row g-lg-10 mb-10 mb-lg-20">
-				<!--begin::Col-->
-				<div class="col-lg-4">
-					<!--begin::Testimonial-->
-					<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
-						<!--begin::Wrapper-->
-						<div class="mb-7">
-							<!--begin::Rating-->
-							<div class="rating mb-6">
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-							</div>
-							<!--end::Rating-->
+    <!--begin::Testimonials Section-->
+    <div class="mt-20 mb-n20 position-relative z-index-2">
+        <!--begin::Container-->
+        <div class="container">
+            <!--begin::Heading-->
+            <div class="text-center mb-17">
+                <!--begin::Title-->
+                <h3 class="fs-2hx text-dark mb-5" id="achievements" data-kt-scroll-offset="{default: 125, lg: 150}">Opiniones
+                    Sobre nosotros</h3>
+                <!--end::Title-->
 
-							<!--begin::Feedback-->
-							<div class="text-gray-500 fw-semibold fs-4">Excelente servicio, Muy confiables, los recomiendo 100%</div>
-							<!--end::Feedback-->
-						</div>
-						<!--end::Wrapper-->
-						<!--begin::Author-->
-						<div class="d-flex align-items-center">
-							<!--begin::Avatar-->
-							<div class="symbol symbol-circle symbol-50px me-5">
-								<img src="assets/media/avatars/300-1.jpg" class="" alt="" />
-							</div>
-							<!--end::Avatar-->
-							<!--begin::Name-->
-							<div class="flex-grow-1">
-								<a href="#" class="text-dark fw-bold text-hover-primary fs-6">Claudia</a>
+            </div>
+            <!--end::Heading-->
+            <!--begin::Slider-->
+            <div class="tns tns-default px-3" style="direction: ltr">
+                <!--begin::Wrapper-->
+                <div class="px-20" data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true" data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1" data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev" data-tns-next-button="#kt_team_slider_next" data-tns-responsive="{1200: {items: 3}, 992: {items: 2}}">
+                    <!--begin::Wrapper-->
+                    <div class="mb-7">
+                        <!--begin::Author-->
+                        <div class="d-flex align-items-center mb-6">
 
-							</div>
-							<!--end::Name-->
-						</div>
-						<!--end::Author-->
-					</div>
-					<!--end::Testimonial-->
-				</div>
-				<!--end::Col-->
-				<!--begin::Col-->
-				<div class="col-lg-4">
-					<!--begin::Testimonial-->
-					<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
-						<!--begin::Wrapper-->
-						<div class="mb-7">
-							<!--begin::Rating-->
-							<div class="rating mb-6">
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-							</div>
-							<!--end::Rating-->
-							<!--begin::Title-->
-							<div class="fs-2 fw-bold text-dark mb-3">This is by far the cleanest template
-								<br />and the most well structured</div>
-							<!--end::Title-->
-							<!--begin::Feedback-->
-							<div class="text-gray-500 fw-semibold fs-4">The most well thought out design theme I have ever used. The codes are up to tandard. The css styles are very clean. In fact the cleanest and the most up to standard I have ever seen.</div>
-							<!--end::Feedback-->
-						</div>
-						<!--end::Wrapper-->
-						<!--begin::Author-->
-						<div class="d-flex align-items-center">
-							<!--begin::Avatar-->
-							<div class="symbol symbol-circle symbol-50px me-5">
-								<img src="assets/media/avatars/300-2.jpg" class="" alt="" />
-							</div>
-							<!--end::Avatar-->
-							<!--begin::Name-->
-							<div class="flex-grow-1">
-								<a href="#" class="text-dark fw-bold text-hover-primary fs-6">Janya Clebert</a>
-								<span class="text-muted d-block fw-bold">Development Lead</span>
-							</div>
-							<!--end::Name-->
-						</div>
-						<!--end::Author-->
-					</div>
-					<!--end::Testimonial-->
-				</div>
-				<!--end::Col-->
-				<!--begin::Col-->
-				<div class="col-lg-4">
-					<!--begin::Testimonial-->
-					<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
-						<!--begin::Wrapper-->
-						<div class="mb-7">
-							<!--begin::Rating-->
-							<div class="rating mb-6">
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-								<div class="rating-label me-2 checked">
-									<i class="ki-duotone ki-star fs-5"></i>
-								</div>
-							</div>
-							<!--end::Rating-->
-							<!--begin::Title-->
-							<div class="fs-2 fw-bold text-dark mb-3">This is by far the cleanest template
-								<br />and the most well structured</div>
-							<!--end::Title-->
-							<!--begin::Feedback-->
-							<div class="text-gray-500 fw-semibold fs-4">The most well thought out design theme I have ever used. The codes are up to tandard. The css styles are very clean. In fact the cleanest and the most up to standard I have ever seen.</div>
-							<!--end::Feedback-->
-						</div>
-						<!--end::Wrapper-->
-						<!--begin::Author-->
-						<div class="d-flex align-items-center">
-							<!--begin::Avatar-->
-							<div class="symbol symbol-circle symbol-50px me-5">
-								<img src="assets/media/avatars/300-16.jpg" class="" alt="" />
-							</div>
-							<!--end::Avatar-->
-							<!--begin::Name-->
-							<div class="flex-grow-1">
-								<a href="#" class="text-dark fw-bold text-hover-primary fs-6">Steave Brown</a>
-								<span class="text-muted d-block fw-bold">Development Lead</span>
-							</div>
-							<!--end::Name-->
-						</div>
-						<!--end::Author-->
-					</div>
-					<!--end::Testimonial-->
-				</div>
-				<!--end::Col-->
-			</div>
-			<!--end::Row-->
-			<!--begin::Highlight-->
-			<div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13" style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
-				<!--begin::Content-->
-				<div class="my-2 me-5">
-					<!--begin::Title-->
-					<div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">Tu asesor académico indicado <br>
-						<span class="fw-normal">al precio indicado y al momento indicado</span></div>
-					<!--end::Title-->
+                            <!--begin::Name-->
+                            <div class="flex-grow-1">
+                                <p  class="text-dark fw-bold text-hover-primary fs-6 ">Claudia</p>
 
-				</div>
-				<!--end::Content-->
-				<!--begin::Link-->
-				<a href="https://1.envato.market/EA4JP" class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2">Whassapp</a>
-				<!--end::Link-->
-			</div>
-			<!--end::Highlight-->
-		</div>
-		<!--end::Container-->
-	</div>
-	<!--end::Testimonials Section-->
-	<!--begin::Footer Section-->
-	<div class="mb-0">
-		<!--begin::Curve top-->
-		<div class="landing-curve landing-dark-color">
-			<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
-			</svg>
-		</div>
-		<!--end::Curve top-->
-		<!--begin::Wrapper-->
-		<div class="landing-dark-bg pt-20">
-			<!--begin::Container-->
-			<div class="container">
-				<!--begin::Row-->
-				<div class="row py-10 py-lg-20">
-					<!--begin::Col-->
-					<div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
-						<!--begin::Block-->
-						<div class="rounded landing-dark-border p-9 mb-10">
-							<!--begin::Title-->
-							<h2 class="text-white">Would you need a Custom License?</h2>
-							<!--end::Title-->
-							<!--begin::Text-->
-							<span class="fw-normal fs-4 text-gray-700">Email us to
-									<a href="#" class="text-white opacity-50 text-hover-primary">support@keenthemes.com</a></span>
-							<!--end::Text-->
-						</div>
-						<!--end::Block-->
-						<!--begin::Block-->
-						<div class="rounded landing-dark-border p-9">
-							<!--begin::Title-->
-							<h2 class="text-white">How About a Custom Project?</h2>
-							<!--end::Title-->
-							<!--begin::Text-->
-							<span class="fw-normal fs-4 text-gray-700">Use Our Custom Development Service.
-									<a href="../dist/pages/user-profile/overview.html" class="text-white opacity-50 text-hover-primary">Click to Get a Quote</a></span>
-							<!--end::Text-->
-						</div>
-						<!--end::Block-->
-					</div>
-					<!--end::Col-->
-					<!--begin::Col-->
-					<div class="col-lg-6 ps-lg-16">
-						<!--begin::Navs-->
-						<div class="d-flex justify-content-center">
-							<!--begin::Links-->
-							<div class="d-flex fw-semibold flex-column me-20">
-								<!--begin::Subtitle-->
-								<h4 class="fw-bold text-gray-400 mb-6">More for Metronic</h4>
-								<!--end::Subtitle-->
-								<!--begin::Link-->
-								<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Documentaions</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Video Tuts</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Changelog</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Support Forum</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="text-white opacity-50 text-hover-primary fs-5">Blog</a>
-								<!--end::Link-->
-							</div>
-							<!--end::Links-->
-							<!--begin::Links-->
-							<div class="d-flex fw-semibold flex-column ms-lg-20">
-								<!--begin::Subtitle-->
-								<h4 class="fw-bold text-gray-400 mb-6">Stay Connected</h4>
-								<!--end::Subtitle-->
-								<!--begin::Link-->
-								<a href="#" class="mb-6">
-									<img src="assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
-									<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Facebook</span>
-								</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="mb-6">
-									<img src="assets/media/svg/brand-logos/github.svg" class="h-20px me-2" alt="" />
-									<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Github</span>
-								</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="mb-6">
-									<img src="assets/media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
-									<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Twitter</span>
-								</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="mb-6">
-									<img src="assets/media/svg/brand-logos/dribbble-icon-1.svg" class="h-20px me-2" alt="" />
-									<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Dribbble</span>
-								</a>
-								<!--end::Link-->
-								<!--begin::Link-->
-								<a href="#" class="mb-6">
-									<img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
-									<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>
-								</a>
-								<!--end::Link-->
-							</div>
-							<!--end::Links-->
-						</div>
-						<!--end::Navs-->
-					</div>
-					<!--end::Col-->
-				</div>
-				<!--end::Row-->
-			</div>
-			<!--end::Container-->
-			<!--begin::Separator-->
-			<div class="landing-dark-separator"></div>
-			<!--end::Separator-->
-			<!--begin::Container-->
-			<div class="container">
-				<!--begin::Wrapper-->
-				<div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
-					<!--begin::Copyright-->
-					<div class="d-flex align-items-center order-2 order-md-1">
-						<!--begin::Logo-->
-						<a href="../dist/landing.html">
-							<img alt="Logo" src="assets/media/logos/landing.svg" class="h-15px h-md-20px" />
-						</a>
-						<!--end::Logo image-->
-						<!--begin::Logo image-->
-						<span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="#">&copy; 2023 Keenthemes Inc.</span>
-						<!--end::Logo image-->
-					</div>
-					<!--end::Copyright-->
-					<!--begin::Menu-->
-					<ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
-						<li class="menu-item">
-							<a href="../dist/pages/team.html" target="_blank" class="menu-link px-2">About</a>
-						</li>
-						<li class="menu-item mx-5">
-							<a href="#" target="_blank" class="menu-link px-2">Support</a>
-						</li>
-						<li class="menu-item">
-							<a href="" target="_blank" class="menu-link px-2">Purchase</a>
-						</li>
-					</ul>
-					<!--end::Menu-->
-				</div>
-				<!--end::Wrapper-->
-			</div>
-			<!--end::Container-->
-		</div>
-		<!--end::Wrapper-->
-	</div>
-	<!--end::Footer Section-->
-	<!--begin::Scrolltop-->
-	<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
-		<i class="ki-duotone ki-arrow-up">
-			<span class="path1"></span>
-			<span class="path2"></span>
-		</i>
-	</div>
-	<!--end::Scrolltop-->
+                            </div>
+                            <!--end::Name-->
+                        </div>
+                        <!--end::Author-->
+                        <!--begin::Rating-->
+                        <div class="rating mb-6">
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 unchecked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                        </div>
+                        <!--end::Rating-->
+
+                        <!--begin::Feedback-->
+                        <div class="text-gray-500 fw-semibold fs-4">Excelente servicio, Muy confiables, los
+                            recomiendo 100%
+                        </div>
+                        <!--end::Feedback-->
+                    </div>
+                    <!--end::Wrapper-->
+                    <!--begin::Wrapper-->
+                    <div class="mb-7">
+                        <!--begin::Author-->
+                        <div class="d-flex align-items-center mb-6">
+
+                            <!--begin::Name-->
+                            <div class="flex-grow-1">
+                                <p  class="text-dark fw-bold text-hover-primary fs-6 ">Armando</p>
+
+                            </div>
+                            <!--end::Name-->
+                        </div>
+                        <!--end::Author-->
+                        <!--begin::Rating-->
+                        <div class="rating mb-6">
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                        </div>
+                        <!--end::Rating-->
+
+                        <!--begin::Feedback-->
+                        <div class="text-gray-500 fw-semibold fs-4">El trabajo estuvo muy bien realizado micho antes
+                            de lo esperado definitivamente los mejores
+                        </div>
+                        <!--end::Feedback-->
+                    </div>
+                    <!--end::Wrapper-->
+                    <!--begin::Wrapper-->
+                    <div class="mb-7">
+                        <!--begin::Author-->
+                        <div class="d-flex align-items-center mb-6">
+
+                            <!--begin::Name-->
+                            <div class="flex-grow-1">
+                                <p class="text-dark fw-bold text-hover-primary fs-6 ">Leonard</p>
+
+                            </div>
+                            <!--end::Name-->
+                        </div>
+                        <!--end::Author-->
+                        <!--begin::Rating-->
+                        <div class="rating mb-6">
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                        </div>
+                        <!--end::Rating-->
+
+                        <!--begin::Feedback-->
+                        <div class="text-gray-500 fw-semibold fs-4"> Sobre el trabajo que mande hacer me pareció un gran trabajo, estaba bien redactado y se noto que se tomaron el
+                            tiempo de hacerlo, estoy muy satisfecho con el trabajo.
+                        </div>
+                        <!--end::Feedback-->
+                    </div>
+                    <!--end::Wrapper-->
+                    <!--begin::Wrapper-->
+                    <div class="mb-7">
+                        <!--begin::Author-->
+                        <div class="d-flex align-items-center mb-6">
+
+                            <!--begin::Name-->
+                            <div class="flex-grow-1">
+                                <p class="text-dark fw-bold text-hover-primary fs-6 ">karen</p>
+
+                            </div>
+                            <!--end::Name-->
+                        </div>
+                        <!--end::Author-->
+                        <!--begin::Rating-->
+                        <div class="rating mb-6">
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                        </div>
+                        <!--end::Rating-->
+
+                        <!--begin::Feedback-->
+                        <div class="text-gray-500 fw-semibold fs-4">  Fue la mejor pagina que pude encontrar,estaba desesperada, cuando revise varias páginas,cuando me quedé con mi
+                            tarea, son personas muy atentas,trabajan organizado,entienden los temas y resultado es lo que uno busca y fue
+                            muy positivo 4.3 me encanta mil y mil gracias a mis trabajos
+                        </div>
+                        <!--end::Feedback-->
+                    </div>
+                    <!--end::Wrapper-->
+                    <!--begin::Wrapper-->
+                    <div class="mb-7">
+                        <!--begin::Author-->
+                        <div class="d-flex align-items-center mb-6">
+
+                            <!--begin::Name-->
+                            <div class="flex-grow-1">
+                                <p class="text-dark fw-bold text-hover-primary fs-6 ">Elisa</p>
+
+                            </div>
+                            <!--end::Name-->
+                        </div>
+                        <!--end::Author-->
+                        <!--begin::Rating-->
+                        <div class="rating mb-6">
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                        </div>
+                        <!--end::Rating-->
+
+                        <!--begin::Feedback-->
+                        <div class="text-gray-500 fw-semibold fs-4">  Excelente me fue, ya que leí si trabajo y estaba tal cual como lo quería y lo mejor es que el maestro me colocó
+                            10 de 10
+                        </div>
+                        <!--end::Feedback-->
+                    </div>
+                    <!--end::Wrapper-->
+                    <!--begin::Wrapper-->
+                    <div class="mb-7">
+                        <!--begin::Author-->
+                        <div class="d-flex align-items-center mb-6">
+
+                            <!--begin::Name-->
+                            <div class="flex-grow-1">
+                                <p class="text-dark fw-bold text-hover-primary fs-6 ">Diego</p>
+
+                            </div>
+                            <!--end::Name-->
+                        </div>
+                        <!--end::Author-->
+                        <!--begin::Rating-->
+                        <div class="rating mb-6">
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                        </div>
+                        <!--end::Rating-->
+
+                        <!--begin::Feedback-->
+                        <div class="text-gray-500 fw-semibold fs-4">    muchas gracias por el apoyo con las solicitudes, la experiencia ha sido muy gratificante y el servicio muy
+                            oportuno.
+                        </div>
+                        <!--end::Feedback-->
+                    </div>
+                    <!--end::Wrapper-->
+                    <!--begin::Wrapper-->
+                    <div class="mb-7">
+                        <!--begin::Author-->
+                        <div class="d-flex align-items-center mb-6">
+
+                            <!--begin::Name-->
+                            <div class="flex-grow-1">
+                                <p class="text-dark fw-bold text-hover-primary fs-6 ">Corialys</p>
+
+                            </div>
+                            <!--end::Name-->
+                        </div>
+                        <!--end::Author-->
+                        <!--begin::Rating-->
+                        <div class="rating mb-6">
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 checked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                            <div class="rating-label me-2 unchecked">
+                                <i class="ki-duotone ki-star fs-5"></i>
+                            </div>
+                        </div>
+                        <!--end::Rating-->
+
+                        <!--begin::Feedback-->
+                        <div class="text-gray-500 fw-semibold fs-4">     Agradezco mucho su colaboración excelente servicio los recomiendo y antes de tiempo muy agradecida
+                        </div>
+                        <!--end::Feedback-->
+                    </div>
+                    <!--end::Wrapper-->
+                </div>
+                <!--end::Wrapper-->
+                <!--begin::Button-->
+                <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev">
+                    <i class="ki-duotone ki-left fs-2x"></i>
+                </button>
+                <!--end::Button-->
+                <!--begin::Button-->
+                <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next">
+                    <i class="ki-duotone ki-right fs-2x"></i>
+                </button>
+                <!--end::Button-->
+            </div>
+            <!--end::Slider-->
+
+            <!--begin::Highlight-->
+            <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13"
+                 style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
+                <!--begin::Content-->
+                <div class="my-2 me-5">
+                    <!--begin::Title-->
+                    <div class="fs-1 fs-lg-2qx fw-bold text-white mb-2">Tu asesor académico indicado <br>
+                        <span class="fw-normal">al precio indicado y al momento indicado</span></div>
+                    <!--end::Title-->
+
+                </div>
+                <!--end::Content-->
+                <!--begin::Link-->
+                <<div id="whatsapp" class="animated bounce gtag" data-event="Click" data-label="Click boton whatsapp" data-category="Boton"
+                      style="
+  bottom: 30px;
+  right: 60px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+                <a href="https://api.whatsapp.com/send?phone=5356083173&amp;text=Hola necesito ayuda con un trabajo" target="_blank" >
+                    <i class="bi bi-whatsapp fs-1" aria-hidden="true" style="color: #fff;
+  font-size: 24px;"></i>
+                </a>
+            </div>
+                <!--end::Link-->
+            </div>
+            <!--end::Highlight-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Testimonials Section-->
+
+
+    <!--begin::Footer Section-->
+    <div class="mb-0">
+        <!--begin::Curve top-->
+        <div class="landing-curve landing-dark-color">
+            <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z"
+                      fill="currentColor"></path>
+            </svg>
+        </div>
+        <!--end::Curve top-->
+        <!--begin::Wrapper-->
+        <div class="landing-dark-bg pt-20">
+            <!--begin::Container-->
+            <div class="container">
+                <!--begin::Row-->
+                <div class="row py-10 py-lg-20">
+                    <!--begin::Col-->
+                    <div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+                        <!--begin::Block-->
+                        <div class="rounded landing-dark-border p-9 mb-10">
+
+                            <!--begin::Text-->
+                            <span class="fw-normal fs-4 text-gray-700">Nuestro correo:
+                                <a href="mailto:felixernesto.garces@gmail.com?subject=Hola%20necesito%20ayuda%20con%20un%20trabajo"
+                                   class="text-white opacity-50 text-hover-primary">felixernesto.garces@gmail.com</a>
+
+                            <!--end::Text-->
+                        </div>
+                        <!--end::Block-->
+
+                    </div>
+                    <!--end::Col-->
+
+                </div>
+                <!--end::Row-->
+            </div>
+            <!--end::Container-->
+            <!--begin::Separator-->
+            <div class="landing-dark-separator"></div>
+            <!--end::Separator-->
+            <!--begin::Container-->
+            <div class="container">
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
+                    <!--begin::Copyright-->
+                    <div class="d-flex align-items-center order-2 order-md-1">
+                        <!--begin::Logo-->
+                        <a href="../dist/index-es.html">
+                            <img alt="Logo" src="assets/media/logos/logo.png"
+                                 class="logo-default h-25px h-lg-80px w-140px"/>
+
+                        </a>
+                        <!--end::Logo image-->
+                        <!--begin::Logo image-->
+                        <span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1"
+                              href="#">&copy; 2025 TUSTRABAJOS.</span>
+                        <!--end::Logo image-->
+                    </div>
+                    <!--end::Copyright-->
+
+                </div>
+                <!--end::Wrapper-->
+            </div>
+            <!--end::Container-->
+        </div>
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Footer Section-->
+    <!--begin::Scrolltop-->
+    <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+        <i class="ki-duotone ki-arrow-up">
+            <span class="path1"></span>
+            <span class="path2"></span>
+        </i>
+    </div>
+    <!--end::Scrolltop-->
 </div>
 
 <!--end::Root-->
 <!--begin::Scrolltop-->
 <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
-	<i class="ki-duotone ki-arrow-up">
-		<span class="path1"></span>
-		<span class="path2"></span>
-	</i>
+    <i class="ki-duotone ki-arrow-up">
+        <span class="path1"></span>
+        <span class="path2"></span>
+    </i>
 </div>
 <!--end::Scrolltop-->
-<!--<div id="whatsapp" class="animated bounce gtag" data-event="Click" data-label="Click boton whatsapp" data-category="Boton"
+<div id="whatsapp" class="animated bounce gtag" data-event="Click" data-label="Click boton whatsapp" data-category="Boton"
 style="position: fixed;
-  z-index: 999;bottom: 20px;right: 20px;height: 60px;width: 60px;ackground-color: #25D366;color: #fff;border-radius: 30px;box-shadow: 1px 6px 24px 0 rgba(7, 94, 84, .24);transition: background-color 0.2s linear;">
-	<a href="https://api.whatsapp.com/send?phone=573026757011&amp;text=Hola necesito ayuda con un trabajo" target="_blank">
-		<i class="fa fa-whatsapp" aria-hidden="true"></i>
+  bottom: 30px;
+  right: 60px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+	<a href="https://api.whatsapp.com/send?phone=5356083173&amp;text=Hola necesito ayuda con un trabajo" target="_blank" >
+		<i class="bi bi-whatsapp fs-1" aria-hidden="true" style="color: #fff;
+  font-size: 24px;"></i>
 	</a>
-</div>-->
+</div>
 <!--begin::Javascript-->
 <script>var hostUrl = "assets/";</script>
 <!--begin::Global Javascript Bundle(mandatory for all pages)-->
